@@ -44,7 +44,7 @@ public class MathLab
     // ---------------------------------------------------------------
     public static int totalMinutes(int hours, int minutes)
     {
-        return MathLab.totalMinutes(hours, minutes);
+        return totalMinutes(hours, minutes);
     }
 
     // ---------------------------------------------------------------
@@ -83,7 +83,8 @@ public class MathLab
     // ---------------------------------------------------------------
     public static int totalSeconds(int hours, int minutes)
     {
-        return MathLab.totalSeconds(hours, minutes);
+        int x = (totalMinutes(hours, minutes)) * 60;
+        return x;
     }
 
     // ---------------------------------------------------------------
@@ -259,7 +260,7 @@ public class MathLab
     // ---------------------------------------------------------------
     public static int rollInRange(int min, int max)
     {
-        return (int) (Math.random() * max) - min;
+        return (int) (Math.random() * max) + min;
     }
 
     // ---------------------------------------------------------------
