@@ -114,7 +114,7 @@ public class MathLab
     // ---------------------------------------------------------------
     public static void printLabel(String name, int count)
     {
-        System.out.println(printLabel(name, count));
+        printLabel(name, count);
     }
 
     // ---------------------------------------------------------------
