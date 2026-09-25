@@ -44,9 +44,7 @@ public class MathLab
     // ---------------------------------------------------------------
     public static int totalMinutes(int hours, int minutes)
     {
-        // TODO Part 1: return the number of minutes in the given hours
-        // and minutes
-        return 0;
+        return MathLab.totalMinutes(hours, minutes);
     }
 
     // ---------------------------------------------------------------
@@ -85,8 +83,7 @@ public class MathLab
     // ---------------------------------------------------------------
     public static int totalSeconds(int hours, int minutes)
     {
-        // TODO Part 2: call totalMinutes, then multiply its result by 60
-        return 0;
+        return MathLab.totalSeconds(hours, minutes);
     }
 
     // ---------------------------------------------------------------
@@ -100,7 +97,7 @@ public class MathLab
     // This method is declared void, which means it hands nothing back. A void
     // method is never part of an expression and can never sit on the right of
     // an assignment -- there is no value to assign. You call it as a statement
-    // on a line by itself:
+    // on a line by itself
     //
     //     printLabel("Pencils", 12);        // correct
     //     String s = printLabel("x", 1);    // will not compile: no value
@@ -117,7 +114,7 @@ public class MathLab
     // ---------------------------------------------------------------
     public static void printLabel(String name, int count)
     {
-        // TODO Part 3: print the name, a colon, a space, and the count
+        System.out.println(printLabel(name, count));
     }
 
     // ---------------------------------------------------------------
@@ -149,8 +146,7 @@ public class MathLab
     // ---------------------------------------------------------------
     public static int distanceFromZero(int n)
     {
-        // TODO Part 4a: return the absolute value of n with Math.abs
-        return 0;
+        return Math.abs(n);
     }
 
     // ---------------------------------------------------------------
@@ -170,8 +166,7 @@ public class MathLab
     // ---------------------------------------------------------------
     public static double distanceFromZero(double n)
     {
-        // TODO Part 4b: return the absolute value of n with Math.abs
-        return 0.0;
+        return Math.abs(n);
     }
 
     // ---------------------------------------------------------------
@@ -199,8 +194,7 @@ public class MathLab
     // ---------------------------------------------------------------
     public static double hypotenuse(double a, double b)
     {
-        // TODO Part 5: return the square root of a * a + b * b
-        return 0.0;
+        return Math.sqrt(a * a + b * b);
     }
 
     // ---------------------------------------------------------------
@@ -228,8 +222,7 @@ public class MathLab
     // ---------------------------------------------------------------
     public static int powerOf(int base, int exponent)
     {
-        // TODO Part 6: return Math.pow(base, exponent), cast to an int
-        return 0;
+        return (int) Math.pow(base, exponent);
     }
 
     // ---------------------------------------------------------------
@@ -266,8 +259,7 @@ public class MathLab
     // ---------------------------------------------------------------
     public static int rollInRange(int min, int max)
     {
-        // TODO Part 7: return a random int from min to max, both included
-        return 0;
+        return (int) (Math.random() * max) - min;
     }
 
     // ---------------------------------------------------------------
