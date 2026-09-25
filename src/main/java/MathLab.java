@@ -84,6 +84,7 @@ public class MathLab
     // ---------------------------------------------------------------
     public static int totalSeconds(int hours, int minutes)
     {
+        int m = totalMinutes(hours, minutes);
         return m * 60;
     }
 
